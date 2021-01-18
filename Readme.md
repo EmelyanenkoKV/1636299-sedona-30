@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Кристина Емельяненко](https://up.htmlacademy.ru/htmlcss/30/user/1636299).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирьян Горячев](https://htmlacademy.ru/profile/id578191/achievements)
 
 ---
 
