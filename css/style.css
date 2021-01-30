@@ -1,0 +1,226 @@
+/*Fonts*/
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("Fonts"),
+  url("../fonts/PTSans.woff2") format("woff2");
+url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("Fonts"),
+  url("../fonts/PTSans-Bold.woff2") format("woff2");
+url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-extra-gray: #333333;
+  --basic-white: #ffffff;
+  --basic-light: #F2F2F2;
+  --basic-light-gray: #EEEEEE;
+  --basic-dark-gray: #666666;
+
+  --special-blue: #81B3D2;
+  --special-blue-extra: #669EC0;
+  --special-blue-dark: #5496BD;
+  --special-blue-gray: #BDBBBC;;
+  --special-brown-light: #766357;
+  --special-brown: #604E43;
+  --special-brown-dark: #503E33;
+}
+
+/* Global */
+
+.page-body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+/* Скопировала данные с макета, не уверена что именно при помощи этих свойст будем размещать, решила попробовать
+
+.main-header-logo {
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  left: 571px;
+  top: 0px;
+}*/
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* Site navigation */
+
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--special-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  color: var(--special-brown-light);
+}
+
+/* Features */
+
+.features-title {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.features-text {
+  line-height: 26px;
+  text-align: center;
+  font-weight: 400;
+  color: var(--basic-extra-gray);
+
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  font-weight: 400;
+  text-align: center;
+}
+
+.feature-blue {
+  color: var(--basic-white);
+  background-color: var(--special-blue);
+}
+
+.features-list-mini {
+  list-style: none;
+}
+
+.feature-title-blue,
+.feature-title-mini,
+.feature-title-gray {
+  font-size: 21px;
+}
+
+.features-text-mini,
+.features-text-gray {
+  color: var(--basic-extra-gray);
+}
+
+.feature-gray {
+  background-color: var(--basic-light-gray);
+}
+
+.appointment {
+  text-align: center;
+}
+
+.appointment-title {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.appointment-info {
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-extra-gray);
+}
+
+.button-brown {
+  text-align: center;
+  line-height: 26px;
+  color: var(--basic-white);
+  background-color: var(--special-brown-light);
+  border: none;
+}
+
+.button-brown:hover {
+  background-color: var(--special-brown);
+}
+
+.button-brown:focus {
+  background-color: var(--special-brown-dark);
+}
+
+.main-footer {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+}
+
+.social-list {
+  text-align: center;
+  list-style: none;
+}
+
+.social-item-button {
+  color: var(--basic-white);
+  background-color: var(--special-blue);
+}
+
+.social-item-button:hover {
+  background-color: var(--special-blue-extra);
+}
+
+.social-item-button:focus {
+  background-color: var(--special-blue-dark);
+}
+
+.footer-copyright {
+  line-height: 26px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
