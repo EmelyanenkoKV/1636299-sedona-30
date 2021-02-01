@@ -16,16 +16,16 @@
       <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
     </a>
     <ul class="site-list-navigation">
-      <li>
+      <li class="site-item">
         <a class="navigation-item" href="#">информация</a>
       </li>
-      <li>
+      <li class="site-item">
         <a class="navigation-item" href="#">фото и видео</a>
       </li>
-      <li>
+      <li class="site-item">
         <a class="navigation-item" href="#">карта штата</a>
       </li>
-      <li>
+      <li class="site-item">
         <a class="navigation-item active-page" href="catalog.html">гостиницы</a>
       </li>
     </ul>
@@ -81,58 +81,99 @@
    -->
   </section>
   <section class="section-result">
-  <div class="search-result">
-    <h2 class="hidden-title-second">Результаты поиска отелей в Седоне</h2>
-  <p class="title high-line">Найдено:3</p>
-    <h3 class="assortment thin-text">Сортировка:</h3>
-  <ul class="assortment-list">
-    <li class="assortment assortment-item thin-text active-item">
-      По цене
-    </li>
-    <li>
-      <a class="assortment assortment-item thin-text" href="#">По типу</a>
-    </li>
-    <li>
-      <a class="assortment assortment-item thin-text" href="#">По рейтингу</a>
-    </li>
-  </ul>
-  </div>
-  <ul class="hotels-list">
-    <li class="hotels-item">
-      <img src="img/Layer%2021.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort and Spa">
-      <a>
-        <h3 class="title high-line hotels">Amara Resort and Spa</h3>
-      </a>
-      <p class="hotels-text gray-text">Гостиница</p>
-      <p class="hotels-text gray-text">от 4000р</p>
-      <a class="text-button" href="#">Подробнее</a>
-      <a class="text-button" href="#">Забронировать</a>
-      <p class="hotels-text rating">Рейтинг:8,5</p>
-    </li>
-    <li class="hotels-item">
-      <img src="img/Layer%2089%20copy.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
-      <a>
-        <h3 class="title high-line hotels">Desert Quail Inn</h3>
-      </a>
-      <p class="hotels-text gray-text">Мотель</p>
-      <p class="hotels-text gray-text">от 3000р</p>
-      <a class="text-button" href="#">Подробнее</a>
-      <a class="text-button" href="#">Забронировать</a>
-      <p class="hotels-text rating">Рейтинг:8,9</p>
-    </li>
-    <li class="hotels-item">
-      <img src="img/Rectangle.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
-      <a>
-        <h3 class="title high-line hotels">Villas at Poco Diablo</h3>
-      </a>
-      <p class="hotels-text gray-text">Апартаменты</p>
-      <p class="hotels-text gray-text">от 2000р</p>
-      <a class="text-button" href="#">Подробнее</a>
-      <a class="text-button" href="#">Забронировать</a>
-      <p class="hotels-text rating">Рейтинг:9,2</p>
-    </li>
-  </ul>
-</section>
+    <div class="search-result">
+      <h2 class="hidden-title-second">Результаты поиска отелей в Седоне</h2>
+      <p class="title high-line">Найдено:3</p>
+      <h3 class="assortment thin-text">Сортировка:</h3>
+      <ul class="assortment-list">
+        <li class="assortment assortment-item thin-text active-item">По цене
+        </li>
+        <li>
+          <a class="assortment assortment-item thin-text" href="#">По типу</a>
+        </li>
+        <li>
+          <a class="assortment assortment-item thin-text" href="#">По рейтингу</a>
+        </li>
+      </ul>
+      <ul class="sorting-controls">
+        <li><a class="arrow ascending" href="#"><img src="img/icon-up-dir.svg" width="11" height="10"
+                                                     alt="стрелочка вверх"></a>
+        </li>
+        <li>
+          <a class="arrow descending down-active" href="#"><img src="img/icon-down-dir.svg" width="11" height="10"
+                                                                alt="стрелочка вниз"></a>
+        </li>
+      </ul>
+    </div>
+    <ul class="hotels-list">
+      <li class="hotels-item">
+        <img src="img/Layer%2021.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort and Spa">
+        <a>
+          <h3 class="title high-line hotels">Amara Resort and Spa</h3>
+        </a>
+        <p class="hotels-text gray-text thin-text">Гостиница</p>
+        <p class="hotels-text gray-text thin-text">от 4000р</p>
+        <a class="button-blue text-button" href="#">Подробнее</a>
+        <a class="button-brown button-brown-mini text-button" href="#">Забронировать</a>
+        <ul class="stars">
+          <li>
+            <img src="img/star.svg" width="18" height="17" alt="звездочка">
+          </li>
+          <li>
+            <img src="img/star.svg" width="18" height="17" alt="звездочка">
+          </li>
+          <li>
+            <img src="img/star.svg" width="18" height="17" alt="звездочка">
+          </li>
+          <li>
+            <img src="img/star.svg" width="18" height="17" alt="звездочка">
+          </li>
+        </ul>
+        <p class="hotels-text rating-text thin-text">Рейтинг: 8,5</p>
+      </li>
+      <li class="hotels-item">
+        <img src="img/Layer%2089%20copy.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
+        <a>
+          <h3 class="title high-line hotels">Desert Quail Inn</h3>
+        </a>
+        <p class="hotels-text gray-text thin-text">Мотель</p>
+        <p class="hotels-text gray-text thin-text">от 3000р</p>
+        <a class="button-blue text-button" href="#">Подробнее</a>
+        <a class="button-brown button-brown-mini text-button" href="#">Забронировать</a>
+        <ul class="stars">
+          <li>
+            <img src="img/star.svg" width="18" height="17" alt="звездочка">
+          </li>
+          <li>
+            <img src="img/star.svg" width="18" height="17" alt="звездочка">
+          </li>
+          <li>
+            <img src="img/star.svg" width="18" height="17" alt="звездочка">
+          </li>
+        </ul>
+        <p class="hotels-text rating-text thin-text">Рейтинг: 8,9</p>
+      </li>
+      <li class="hotels-item">
+        <img src="img/Rectangle.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
+        <a>
+          <h3 class="title high-line hotels">Villas at Poco Diablo</h3>
+        </a>
+        <p class="hotels-text gray-text thin-text">Апартаменты</p>
+        <p class="hotels-text gray-text thin-text">от 2000р</p>
+        <a class="button-blue text-button" href="#">Подробнее</a>
+        <a class="button-brown button-brown-mini text-button" href="#">Забронировать</a>
+        <ul class="stars">
+          <li>
+            <img src="img/star.svg" width="18" height="17" alt="звездочка">
+          </li>
+          <li>
+            <img src="img/star.svg" width="18" height="17" alt="звездочка">
+          </li>
+        </ul>
+        <p class="hotels-text rating-text thin-text">Рейтинг: 9,2</p>
+      </li>
+    </ul>
+  </section>
 </main>
 <footer class="main-footer">
   <address class="footer-address">

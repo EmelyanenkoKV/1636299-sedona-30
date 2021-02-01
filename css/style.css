@@ -94,12 +94,8 @@ ul {
   color: var(--special-blue);
 }
 
-.navigation-item:focus {
-  color: var(--basic-black);
-}
-
 .navigation-item:active {
-  color: var(--special-brown-light);
+  color: rgba(var(--basic-black) 0.3);
 }
 
 /* Features */
@@ -149,7 +145,7 @@ ul {
   background-color: var(--special-brown);
 }
 
-.button-brown:focus {
+.button-brown:active {
   background-color: var(--special-brown-dark);
 }
 
@@ -176,7 +172,7 @@ ul {
   background-color: var(--special-blue-extra);
 }
 
-.social-item-button:focus {
+.social-item-button:active {
   background-color: var(--special-blue-dark);
 }
 
@@ -188,8 +184,85 @@ ul {
 
 /* Стилизация внутренней страницы*/
 
+.active-page {
+  color: var(--special-brown-light);
+}
 
+.assortment {
+  font-size: 12px;
+  line-height: 18px;
+}
 
+/*Не уверена в правильности активности ссылок, по макету не совпадают цвета при наведении, не могу разобраться =((((*/
+.assortment-item {
+  color: var(--basic-black);
+  opacity: 0.3;
+  text-decoration: underline;
+}
+
+.assortment-item:hover {
+  color: var(--special-blue);
+}
+
+.assortment-item:active {
+  color: var(--basic-black);
+}
+
+.active-item {
+  color: var(--special-blue);
+  text-decoration: none;
+}
+
+.text-button {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.button-blue {
+  display: inline-block;
+  text-align: center;
+  width: 110px;
+  height: 27px;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--special-blue);
+}
+
+.button-brown-mini {
+  display: inline-block;
+  text-align: center;
+  width: 142px;
+  height: 27px;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--special-brown-light);
+}
+
+.button-blue:hover {
+  background-color: var(--special-blue-extra);
+}
+
+.button-blue:active {
+  background-color: var(--special-blue-dark);
+}
+
+.rating-text {
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  color: var(--basic-dark-gray);
+  background-color: var(--basic-light);
+}
+
+.hotels:hover {
+  color: var(--special-blue);
+}
+
+.hotels:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
 
 
 
