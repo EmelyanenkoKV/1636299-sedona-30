@@ -30,10 +30,11 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   --special-blue: #81B3D2;
   --special-blue-extra: #669EC0;
   --special-blue-dark: #5496BD;
-  --special-blue-gray: #BDBBBC;;
   --special-brown-light: #766357;
   --special-brown: #604E43;
   --special-brown-dark: #503E33;
+  --special-dark: #231F20;
+  --special-blue-gray: #BDBBBC;
 }
 
 /* Global */
@@ -48,6 +49,10 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   background-color: var(--basic-white);
 }
 
+.thin-text {
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
 }
@@ -57,90 +62,58 @@ img {
   height: auto;
 }
 
-/* Main navigation */
-
-/* Скопировала данные с макета, не уверена что именно при помощи этих свойст будем размещать, решила попробовать
-
-.main-header-logo {
-  position: absolute;
-  width: 138px;
-  height: 70px;
-  left: 571px;
-  top: 0px;
-}*/
-.main-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  background-color: var(--basic-white);
+ul {
+  list-style: none;
 }
 
-.site-navigation {
-  list-style: none;
+.gray-text {
+  color: var(--basic-extra-gray);
+}
+
+.high-line {
+  line-height: 26px;
+}
+
+/* Main navigation */
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+}
+
+.main-navigation {
+  background-color: var(--basic-white);
 }
 
 /* Site navigation */
 
-
-.site-navigation a {
+.navigation-item {
   color: var(--basic-black);
 }
 
-.site-navigation a:hover {
+.navigation-item:hover {
   color: var(--special-blue);
 }
 
-.site-navigation a:focus {
+.navigation-item:focus {
   color: var(--basic-black);
-  opacity: 0.3;
 }
 
-.site-navigation a:active {
+.navigation-item:active {
   color: var(--special-brown-light);
 }
 
 /* Features */
+.features {
+  text-align: center;
+}
 
-.features-title {
+.title {
   font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.features-text {
-  line-height: 26px;
-  text-align: center;
-  font-weight: 400;
-  color: var(--basic-extra-gray);
-
-}
-
-.features-list {
-  list-style: none;
-}
-
-.feature-item {
-  font-weight: 400;
-  text-align: center;
 }
 
 .feature-blue {
   color: var(--basic-white);
   background-color: var(--special-blue);
-}
-
-.features-list-mini {
-  list-style: none;
-}
-
-.feature-title-blue,
-.feature-title-mini,
-.feature-title-gray {
-  font-size: 21px;
-}
-
-.features-text-mini,
-.features-text-gray {
-  color: var(--basic-extra-gray);
 }
 
 .feature-gray {
@@ -158,13 +131,15 @@ img {
 
 .appointment-info {
   line-height: 24px;
-  font-weight: 400;
-  color: var(--basic-extra-gray);
 }
 
 .button-brown {
-  text-align: center;
+  font-size: 21px;
   line-height: 26px;
+  width: 568px;
+  height: 86px;
+  font-weight: 700;
+  text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--special-brown-light);
   border: none;
@@ -179,21 +154,17 @@ img {
 }
 
 .main-footer {
-  background: rgba(255, 255, 255, 0.9);
+  background-color: rgba(var(--basic-white), 0.9);
 }
 
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
-}
-
-.footer-contacts a {
   color: var(--basic-black);
 }
 
 .social-list {
   text-align: center;
-  list-style: none;
 }
 
 .social-item-button {
@@ -209,12 +180,13 @@ img {
   background-color: var(--special-blue-dark);
 }
 
-.footer-copyright {
+.text-copyright {
   line-height: 26px;
   font-weight: 400;
 }
 
 
+/* Стилизация внутренней страницы*/
 
 
 
