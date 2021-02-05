@@ -56,7 +56,6 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   align-content: start;
   width: 1200px;
   margin: 0 auto;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
 .thin-text {
