@@ -261,6 +261,8 @@ ul {
   text-align: center;
 }
 
+/*Button*/
+
 .button {
   padding: 3px 17px 3px 16px;
   color: var(--basic-white);
