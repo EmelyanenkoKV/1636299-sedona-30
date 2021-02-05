@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
@@ -12,9 +12,6 @@
 <body class="page-body">
 <header class="main-header">
   <nav class="main-navigation high-line">
-    <a class="main-header-logo">
-      <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
-    </a>
     <ul class="site-list-navigation">
       <li class="site-item">
         <a class="navigation-item" href="#">информация</a>
@@ -29,78 +26,81 @@
         <a class="navigation-item" href="catalog.html">гостиницы</a>
       </li>
     </ul>
+    <a class="main-header-logo">
+      <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
+    </a>
   </nav>
 </header>
 <main class="container">
   <section class="welcome-image">
-    <img src="img/background%20photo.jpg" width="1202" height="511" alt="Фото городка Седона">
+    <img src="img/background%20photo.jpg" width="1200" height="509" alt="Фото городка Седона">
     <img src="img/welcome.svg" width="457" height="351" alt="welcome-text">
     <h1 class="hidden-title-first">sedona</h1>
   </section>
   <section class="features">
-    <h2 class="title features-slogan high-line">Седона - небольшой городок в Аризоне, заслуживающий больше!</h2>
-    <p class="features-text thin-text gray-text high-line">Рассмотрим 5 причин, по которым Седона круче, чем гранд
-      каньон!</p>
+    <div class="promo">
+      <h2 class="title promo-slogan high-line">Седона - небольшой городок в Аризоне, заслуживающий больше!</h2>
+      <p class="promo-text thin-text gray-text high-line">Рассмотрим 5 причин, по которым Седона круче, чем гранд
+        каньон!</p>
+    </div>
     <ul class="features-list">
-      <li class="feature-item">
+      <li class="feature-item-big">
         <div class="feature-blue">
           <h3 class="title feature-subtitle">Настоящий городок</h3>
-          <p class="features-desc thin-text">-№1-</p>
-          <p class="features-desc thin-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <p class="number thin-text">-№1-</p>
+          <p class="thin-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img src="img/image_1.jpg" width="800" height="256" alt="Настоящий городок">
-        <ul class="features-list-mini">
-          <li class="feature-item-mini">
-            <img src="img/icon-1.svg" width="75" height="72" alt="Иконка домик">
-            <h4 class="title feature-subtitle-mini">Жильё</h4>
-            <p class="features-desc thin-text gray-text">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+        <img class="feature-img-first" src="img/image_1.jpg" width="800" height="256" alt="Настоящий городок">
+        <ul class="features-list full-w">
+          <li class="feature-item">
+            <h4 class="title">Жильё</h4>
+            <p class="features-desc-mini thin-text gray-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="feature-item-mini">
-            <img src="img/icon-2.svg" width="75" height="72" alt="Иконка бургер">
-            <h4 class="title feature-subtitle-mini">Еда</h4>
-            <p class="features-desc thin-text gray-text">Вегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="feature-item">
+            <h4 class="title">Еда</h4>
+            <p class="features-desc-mini thin-text gray-text">Вегда заказывайте фирменный бургер, вы не
+              разочаруетесь!</p>
           </li>
-          <li class="feature-item-mini">
-            <img src="img/icon-3.svg" width="75" height="72" alt="Иконка подарок">
-            <h4 class="title feature-subtitle-mini">Сувениры</h4>
-            <p class="features-desc thin-text gray-text">Не только китайского, но и местного производства!</p>
+          <li class="feature-item">
+            <h4 class="title">Сувениры</h4>
+            <p class="features-desc-mini thin-text gray-text">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </li>
-      <li class="feature-item">
+      <li class="feature-item-big">
+        <img class="feature-img-second" src="img/image_2.png" width="800" height="256" alt="Там есть мост дьявола">
         <div class="feature-blue">
           <h3 class="title feature-subtitle">Там есть мост дьявола</h3>
-          <p class="features-desc thin-text">-№2-</p>
-          <p class="features-desc thin-text">Да, по нем уможно пройти! Если конечно вы осмелитесь</p>
+          <p class="number thin-text">-№2-</p>
+          <p class="thin-text">Да, по нем уможно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <img src="img/image_2.png" width="800" height="256" alt="Там есть мост дьявола">
       </li>
       <li class="feature-item">
         <div class="feature-gray">
-          <h3 class="title feature-subtitle">Небольшая площадь</h3>
-          <p class="features-desc thin-text gray-text">-№3-</p>
+          <h3 class="title feature-subtitle-gray">Небольшая площадь</h3>
+          <p class="number thin-text gray-text">-№3-</p>
           <p class="features-desc thin-text gray-text">Все достопримечательности находятся очень близко</p>
         </div>
       </li>
       <li class="feature-item">
         <div class="feature-gray">
-          <h3 class="title feature-subtitle">Красивая дорога</h3>
-          <p class="features-desc thin-text gray-text">-№4-</p>
+          <h3 class="title feature-subtitle-gray">Красивая дорога</h3>
+          <p class="number thin-text gray-text">-№4-</p>
           <p class="features-desc thin-text gray-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
       </li>
       <li class="feature-item">
         <div class="feature-gray">
-          <h3 class="title feature-subtitle">Мало туристов</h3>
-          <p class="features-desc thin-text gray-text">-№5-</p>
-          <p class="features-desc thin-text gray-text">Большинство едет в Гранд Каньен и топится там</p>
+          <h3 class="title feature-subtitle-gray">Мало туристов</h3>
+          <p class="number thin-text gray-text">-№5-</p>
+          <p class="features-desc thin-text gray-text">Большинство едет в Гранд Каньон и топится там</p>
         </div>
       </li>
     </ul>
   </section>
   <section class="appointment">
     <h2 class="appointment-title">Заинтересовались?</h2>
-    <p class="appointment-info thin-text gray-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+    <p class="appointment-info thin-text gray-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
       предложения гостиниц в Седоне</p>
     <button class="button button-big button-brown" type="button">Поиcк гостиницы в Седоне</button>
     <!-- Здесь будет форма выбора гостиницы -->
@@ -114,7 +114,7 @@
 <footer class="main-footer">
   <address class="footer-address">
     <a class="footer-hashtag footer-contacts" href="#">#visitsedona</a>
-    <p class="footer-contacts"> ТЕЛ: <a class="footer-phone footer-contacts" href="tel:+74956660166">+7 (495)
+    <p class="footer-contacts footer-phone"> ТЕЛ: <a class="footer-contacts" href="tel:+74956660166">+7 (495)
       666-01-66</a></p>
   </address>
   <ul class="social-list">
