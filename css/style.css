@@ -35,6 +35,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   --special-brown-dark: #503E33;
   --special-dark: #231F20;
   --special-blue-gray: #BDBBBC;
+  --special-gray-line: #E5E5E5;;
 }
 
 /* Global */
@@ -55,7 +56,9 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .thin-text {
@@ -98,6 +101,7 @@ ul {
   top: 0;
   transform: translate(-50%);
 }
+
 
 /* Main navigation */
 
@@ -340,6 +344,34 @@ ul {
 
 /* Стилизация внутренней страницы*/
 
+/*Flex*/
+.sorting {
+  display: flex;
+}
+
+.sorting-title {
+  margin: 29px 46px 31px 73px;
+}
+
+.sorting-subtitle {
+  margin-top: 31px;
+  margin-right: 40px;
+}
+
+.assortment-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.assortment-item {
+  display: flex;
+  margin-top: 32px;
+  margin-right: 33px;
+  margin-bottom: 36px;
+}
+
 .active-page {
   color: var(--special-brown-light);
 }
@@ -347,6 +379,63 @@ ul {
 .assortment {
   font-size: 12px;
   line-height: 18px;
+}
+
+.hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hotels-item {
+  width: 100%;
+  border-top: 1px solid var(--special-gray-line);
+  border-bottom: 1px solid var(--special-gray-line);
+  min-height: 150px;
+  display: flex;
+}
+
+.hotels-foto {
+  width: 135px;
+  height: 90px;
+  margin: 30px 29px 30px 73px;
+}
+
+.type-price {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels {
+  margin: 0;
+  padding-top: 0;
+}
+
+.hotels-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 23px;
+}
+
+.type-price-text {
+  height: 21px;
+  width: 107px;
+  margin-top: 7px;
+  padding-right: 9px;
+  margin-bottom: 16px;
+}
+
+.result-buttons {
+  margin-top: 5px;
+}
+
+.rating-text {
+  align-self: flex-end;
+  margin-left: 537px;
+  margin-bottom: 30px;
 }
 
 /*Не уверена в правильности активности ссылок, по макету не совпадают цвета при наведении, не могу разобраться =((((*/
@@ -401,9 +490,3 @@ ul {
   color: var(--basic-black);
   opacity: 0.3;
 }
-
-
-
-
-
-
