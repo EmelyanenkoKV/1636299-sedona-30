@@ -413,7 +413,6 @@ ul {
   color: var(--basic-black);
 }
 
-
 .hotels-info {
   display: flex;
   flex-direction: column;
@@ -429,16 +428,7 @@ ul {
 }
 
 /*Не уверена в правильности активности ссылок, по макету не совпадают цвета при наведении, не могу разобраться =((((*/
-/*.assortment-item:not(.active-item)::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: -10px;
-  display: block;
-  border-bottom: 1px dashed var(--special-blue);
-}*/
+
 .assortment-item {
   color: var(--basic-black);
   opacity: 0.3;
