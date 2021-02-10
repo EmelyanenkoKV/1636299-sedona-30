@@ -58,7 +58,6 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 1200px;
   margin: 0 auto;
-
 }
 
 .thin-text {
@@ -77,6 +76,10 @@ img {
 ul {
   list-style: none;
   padding: 0;
+}
+
+.title {
+  font-size: 21px;
 }
 
 .gray-text {
@@ -110,6 +113,7 @@ ul {
 }
 
 /* Site navigation */
+
 .site-list-navigation {
   list-style: none;
   width: 1200px;
@@ -149,6 +153,10 @@ ul {
   opacity: 0.3;
 }
 
+.active-page {
+  color: var(--special-brown-light);
+}
+
 /*Conteiner*/
 
 .welcome-image {
@@ -172,10 +180,6 @@ ul {
 
 .features {
   text-align: center;
-}
-
-.title {
-  font-size: 21px;
 }
 
 .features-list {
@@ -370,10 +374,25 @@ ul {
 .assortment-item {
   display: flex;
   margin-right: 32px;
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--special-blue);
 }
 
-.active-page {
-  color: var(--special-brown-light);
+.assortment-item:hover {
+  color: var(--special-blue);
+  opacity: 1;
+}
+
+.assortment-item:active {
+  color: var(--basic-black);
+  border-bottom-style: none;
+}
+
+.active-item {
+  color: var(--special-blue);
+  border-bottom-style: none;
+  opacity: 1;
 }
 
 .hotels-list {
@@ -422,49 +441,6 @@ ul {
   margin-right: 6px;
 }
 
-.rating-block {
-  margin-left: auto;
-  align-self: flex-end;
-}
-
-/*Не уверена в правильности активности ссылок, по макету не совпадают цвета при наведении, не могу разобраться =((((*/
-
-.assortment-item {
-  color: var(--basic-black);
-  opacity: 0.3;
-  border-bottom: 1px dashed var(--special-blue);
-}
-
-.assortment-item:hover {
-  color: var(--special-blue);
-  opacity: 1;
-}
-
-.assortment-item:active {
-  color: var(--basic-black);
-  border-bottom-style: none;
-}
-
-.active-item {
-  color: var(--special-blue);
-  border-bottom-style: none;
-  opacity: 1;
-}
-
-/*Button*/
-
-.button-blue {
-  background-color: var(--special-blue);
-}
-
-.button-blue:hover {
-  background-color: var(--special-blue-extra);
-}
-
-.button-blue:active {
-  background-color: var(--special-blue-dark);
-}
-
 .rating-text {
   padding: 3px 12px 3px 15px;
   margin: 0;
@@ -481,3 +457,23 @@ ul {
   color: var(--basic-black);
   opacity: 0.3;
 }
+
+.rating-block {
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+/*Button*/
+
+.button-blue {
+  background-color: var(--special-blue);
+}
+
+.button-blue:hover {
+  background-color: var(--special-blue-extra);
+}
+
+.button-blue:active {
+  background-color: var(--special-blue-dark);
+}
+
