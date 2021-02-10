@@ -396,6 +396,7 @@ ul {
 .hotels-foto {
   width: 135px;
   height: 90px;
+  margin-right: 29px;
 }
 
 .type-price {
@@ -410,12 +411,13 @@ ul {
 .hotels {
   margin: 0;
   padding: 0;
+  color: var(--basic-black);
 }
+
 
 .hotels-info {
   display: flex;
   flex-direction: column;
-  margin-left: 29px;
 }
 .result-buttons a {
   margin-right: 6px;
@@ -423,6 +425,7 @@ ul {
 
 .rating-block {
   margin-left: auto;
+  align-self: flex-end;
 }
 
 /*Не уверена в правильности активности ссылок, по макету не совпадают цвета при наведении, не могу разобраться =((((*/
@@ -462,9 +465,8 @@ ul {
 }
 
 .rating-text {
-  /*width: 110px;
-  height: 27px;*/
   padding: 3px 12px 3px 15px;
+  margin: 0;
   text-align: center;
   color: var(--basic-dark-gray);
   background-color: var(--basic-light);
