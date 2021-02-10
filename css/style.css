@@ -55,9 +55,10 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .thin-text {
@@ -100,7 +101,6 @@ ul {
   top: 0;
   transform: translate(-50%);
 }
-
 
 /* Main navigation */
 
