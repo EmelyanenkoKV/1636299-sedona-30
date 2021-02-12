@@ -72,6 +72,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .thin-text {
   font-weight: 400;
 }
@@ -115,6 +116,7 @@ ul {
   top: 0;
   transform: translate(-50%);
   position: absolute;
+  z-index: 1;
 }
 
 
@@ -180,12 +182,14 @@ ul {
   position: relative;
 
 }
+
 .welcome-text {
   width: 457px;
   height: 351px;
   padding: 78px 372px 25px;
 
 }
+
 .welcome-image::after {
   content: "";
   position: absolute;
@@ -240,7 +244,7 @@ ul {
 }
 
 .feature-item .title {
-  position:relative;
+  position: relative;
 }
 
 .house::before {
@@ -262,6 +266,7 @@ ul {
   bottom: 50px;
   left: 41%;
 }
+
 .souvenirs::before {
   content: "";
   height: 77px;
@@ -271,6 +276,7 @@ ul {
   bottom: 50px;
   left: 42%;
 }
+
 .full-w {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -367,43 +373,71 @@ ul {
 
 .main-footer {
   background-color: rgba(var(--basic-white), 0.9);
-  box-sizing: border-box;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer-address {
-  width: 400px;
-  text-align: center;
-  margin: 23px auto 36px;
+  display: flex;
+  justify-content: space-around;
+  padding: 23px 0 36px;
 }
 
 .footer-contacts {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
 }
 
-.footer-phone {
-  margin-top: 10px;
+.hashtag {
+  padding-left: 45px;
+}
+
+.phone {
+  margin-top: 9px;
 }
 
 .social-list {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 150px;
+  padding-top: 5px;
+  margin: 0;
 }
 
-.social-item-button {
-  color: var(--basic-white);
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   background-color: var(--special-blue);
 }
 
-.social-item-button:hover {
+.social-button:hover {
   background-color: var(--special-blue-extra);
 }
 
-.social-item-button:active {
+.social-button:active {
   background-color: var(--special-blue-dark);
+}
+
+.social-button:active path {
+  fill-opacity: 0.3;
+}
+
+.footer-copyright {
+  display: flex;
+  width: 196px;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-right: 39px;
+}
+
+.copyright:hover path {
+  fill: var(--special-blue);
+}
+
+.copyright:active path {
+  fill: var(--special-blue-gray);
 }
 
 .text-copyright {
@@ -428,6 +462,13 @@ ul {
 .sorting-subtitle {
   margin: 2px 40px 0 0;
   padding: 0;
+}
+
+.sorting-controls {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  width: 34px;
 }
 
 .assortment-list {
