@@ -35,7 +35,8 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   --special-brown-dark: #503E33;
   --special-dark: #231F20;
   --special-blue-gray: #BDBBBC;
-  --special-gray-line: #E5E5E5;;
+  --special-gray-line: #E5E5E5;
+  --special-gray: #CACACA;
 }
 
 /* Global */
@@ -466,9 +467,25 @@ ul {
 
 .sorting-controls {
   display: flex;
-  margin: 0;
+  margin: 0 0 0 auto;
   justify-content: space-between;
   width: 34px;
+}
+
+/*Не уверена что сделала верно.
+Задала свойство ссылке только стрелочке вверх, по макету вторая нажата, соответственно не активная.
+Нужно задать свойство общему классу стрелок и что-то сделать с не активной, или так верно?
+Получается что если так, то много лишних кассов. Нужет совет, классы никакие не убирала */
+.ascending path {
+  font: var(--special-gray);
+}
+
+.ascending:hover path {
+  fill: var(--basic-black);
+}
+
+.ascending:active path {
+  fill: var(--special-blue);
 }
 
 .assortment-list {
@@ -545,7 +562,21 @@ ul {
 }
 
 .result-buttons a {
-  margin-right: 6px;
+  margin-right: 3px;
+}
+
+/*Button*/
+
+.button-blue {
+  background-color: var(--special-blue);
+}
+
+.button-blue:hover {
+  background-color: var(--special-blue-extra);
+}
+
+.button-blue:active {
+  background-color: var(--special-blue-dark);
 }
 
 .rating-text {
@@ -570,17 +601,19 @@ ul {
   align-self: flex-end;
 }
 
-/*Button*/
-
-.button-blue {
-  background-color: var(--special-blue);
+.stars-list {
+  padding-bottom: 47px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.button-blue:hover {
-  background-color: var(--special-blue-extra);
+.star {
+  margin-right: 5px;
 }
 
-.button-blue:active {
-  background-color: var(--special-blue-dark);
+.star:last-child {
+  margin-right: 0;
 }
+
+
 
