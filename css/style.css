@@ -109,12 +109,12 @@ ul {
 }
 
 .main-header-logo {
-  position: absolute;
   width: 138px;
   height: 70px;
   left: 50%;
   top: 0;
   transform: translate(-50%);
+  position: absolute;
 }
 
 
