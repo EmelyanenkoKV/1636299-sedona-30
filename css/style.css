@@ -60,6 +60,18 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .thin-text {
   font-weight: 400;
 }
@@ -104,6 +116,7 @@ ul {
   top: 0;
   transform: translate(-50%);
 }
+
 
 /* Main navigation */
 
@@ -161,6 +174,27 @@ ul {
 
 .welcome-image {
   margin: 0 auto;
+  background-image: url(../img/background_photo.jpg);
+  width: 1200px;
+  height: 509px;
+  position: relative;
+
+}
+.welcome-text {
+  width: 457px;
+  height: 351px;
+  padding: 78px 372px 25px;
+
+}
+.welcome-image::after {
+  content: "";
+  position: absolute;
+  background: url(../img/Shape.svg);
+  width: 1200px;
+  height: 57px;
+  bottom: 0;
+
+
 }
 
 .promo {
@@ -205,6 +239,38 @@ ul {
   grid-column-end: 3;
 }
 
+.feature-item .title {
+  position:relative;
+}
+
+.house::before {
+  content: "";
+  height: 76px;
+  width: 75px;
+  background: url(../img/icon-1.svg) no-repeat;
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+}
+
+.food::before {
+  content: "";
+  height: 70px;
+  width: 75px;
+  background: url(../img/icon-3.svg) no-repeat;
+  position: absolute;
+  bottom: 50px;
+  left: 41%;
+}
+.souvenirs::before {
+  content: "";
+  height: 77px;
+  width: 64px;
+  background: url(../img/icon-2.svg) no-repeat;
+  position: absolute;
+  bottom: 50px;
+  left: 42%;
+}
 .full-w {
   grid-column-start: 1;
   grid-column-end: 4;
