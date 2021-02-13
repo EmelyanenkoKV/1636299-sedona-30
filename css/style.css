@@ -181,7 +181,6 @@ ul {
   width: 1200px;
   height: 509px;
   position: relative;
-
 }
 
 .welcome-text {
@@ -615,5 +614,27 @@ ul {
   margin-right: 0;
 }
 
+/*.filters {
+  margin: 0 auto;
+  background-image: url(../img/background.jpg);
+  width: 1200px;
+  height: 217px;
+  position: relative;
+}
 
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 72px;
+  top: 24;
+  width: 27px;
+  height: 23px;
+  border: 2px solid var(--basic-white);
+}*/
 

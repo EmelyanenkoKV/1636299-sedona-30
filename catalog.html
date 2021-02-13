@@ -33,25 +33,25 @@
 </header>
 <main class="page-hotels container">
   <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
-  <section class="section-search">
+  <section class="filters">
     <h2 class="visually-hidden">Критерии поиска гостиницы</h2>
-    <img src="img/background.jpg" width="1200" height="217" alt="Размытое фото Седоны">
+   <!-- <img src="img/background.jpg" width="1200" height="217" alt="Размытое фото Седоны">-->
     <!--Здесь будет форма выбора гостиниц-->
-    <!--<h2 class="visually-hidden">Фильтр гостиниц</h2>
+    <h2 class="visually-hidden">Фильтр гостиниц</h2>
     <form method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Инфрастуктура:</legend>
         <ul>
-          <li>
-            <input type="checkbox" name="pool" id="filter-pool" checked>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked>
             <label for="filter-pool">Бассейн</label>
           </li>
-          <li>
-            <input type="checkbox" name="parking" id="filter-parking">
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
             <label for="filter-parking">Парковка</label>
           </li>
-          <li>
-            <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
             <label for="filter-wi-fi">wi-fi</label>
           </li>
         </ul>
@@ -77,8 +77,8 @@
         <legend>Стоимость в сутки (р):</legend>
       </fieldset>
       <button type="submit">Показать</button>
-    </form>-->
-  </section>
+    </form>
+      </section>
   <section class="section-result">
     <h2 class="visually-hidden">Результаты поиска отелей в Седоне</h2>
     <div class="sorting">
