@@ -102,13 +102,14 @@
     <h2 class="search-title">Заинтересовались?</h2>
     <p class="search-info thin-text gray-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
       предложения гостиниц в Седоне</p>
-    <button class="button button-big button-brown" type="button">Поиcк гостиницы в Седоне</button>
+    <button class="button button-big button-brown" type="button" aria-label="Форма для выбора дат и количества человек">
+      Поиcк гостиницы в Седоне
+    </button>
     <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
       <label class="search-date" for="search-date-in">
         <p class="label-text">Дата заезда:</p>
-        <input class="search-input-data" id="search-date-in" type="date" name="date" placeholder="24 апреля 2017">
         <div class="input-data-wrapper">
-          <p class="sample-data">24 апреля 2017 </p>
+          <input class="search-input-data" id="search-date-in" type="text" name="date" placeholder="24 апреля 2017">
           <svg class="calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -122,9 +123,8 @@
       </label>
       <label class="search-date" for="search-date-out">
         <p class="label-text">Дата выезда:</p>
-        <input class="search-input-data" id="search-date-out" type="date" name="date" value="4 июля 2017">
         <div class="input-data-wrapper">
-          <p class="sample-data">4 июля 2017</p>
+          <input class="search-input-data" id="search-date-out" type="text" name="date" placeholder="4 июля 2017">
           <svg class="calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -140,33 +140,47 @@
         <label class="search-number" for="search-adults">
           <p class="label-text">Взрослые:</p>
           <div class="input-number-wrapper">
-            <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="12" height="3" fill="#A9A9A9"/>
-            </svg>
+            <button class="button-number" type="button" aria-label="Уменьшить количество взрослых на один">
+              <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9"/>
+              </svg>
+            </button>
             <input class="search-input-number" type="text" name="adults" min="1" value="2" id="search-adults">
-            <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                    fill="#A9A9A9"/>
-            </svg>
+            <button class="button-number" type="button" aria-label="Увеличить количество взрослых на один">
+              <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                      fill="#A9A9A9"/>
+              </svg>
+            </button>
           </div>
         </label>
         <label class="search-number" for="search-kids">
           <p class="label-text">Дети:</p>
           <div class="input-number-wrapper">
-            <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="12" height="3" fill="#A9A9A9"/>
-            </svg>
+            <button class="button-number" type="button" aria-label="Уменьшить количество детей на один">
+              <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9"/>
+              </svg>
+            </button>
             <input class="search-input-number" type="text" name="kids" min="0" value="0" id="search-kids">
-            <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                    fill="#A9A9A9"/>
-            </svg>
+            <button class="button-number" type="button" aria-label="Увеличить количество детей на один">
+              <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                      fill="#A9A9A9"/>
+              </svg>
+            </button>
           </div>
         </label>
       </div>
-      <button class="button button-search button-blue" type="button">Найти</button>
+      <button class="button button-search button-blue" type="button"
+              aria-label="Отобразить найденный результат по заданым параметрам">Найти
+      </button>
     </form>
   </section>
   <section class="map">
@@ -180,8 +194,9 @@
 <footer class="main-footer home-footer">
   <address class="footer-address">
     <a class="footer-contacts hashtag" href="#">#visitsedona</a>
-    <p class="footer-contacts phone"> ТЕЛ: <a class="footer-contacts" href="tel:+74956660166">+7 (495)
-      666-01-66</a></p>
+    <p class="footer-contacts phone"> ТЕЛ:
+      <a class="footer-contacts" href="tel:+74956660166">+7 (495)666-01-66</a>
+    </p>
   </address>
   <ul class="social-list">
     <li>

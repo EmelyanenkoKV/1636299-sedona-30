@@ -35,7 +35,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   --special-brown-dark: #503E33;
   --special-dark: #231F20;
   --special-blue-gray: #BDBBBC;
-  --special-gray-input: #EBEBEB ;
+  --special-gray-input: #EBEBEB;
   --special-gray-line: #E5E5E5;
   --special-gray: #CACACA;
   --special-gray-disabled: #6A6A6A;
@@ -65,7 +65,9 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   width: 1200px;
   margin: 0 auto;
+
 }
+
 .home-body {
   position: relative;
 }
@@ -256,7 +258,7 @@ ul {
   position: relative;
 }
 
-.house::before{
+.house::before {
   content: "";
   height: 76px;
   width: 75px;
@@ -354,6 +356,7 @@ ul {
   padding-top: 15px;
   text-align: center;
 }
+
 .search-form {
   width: 568px;
   height: 395px;
@@ -366,10 +369,25 @@ ul {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   position: absolute;
   left: 317px;
-
 }
+
 .search-input-data {
-  display: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 346px;
+  height: 38px;
+  margin: 0;
+  padding-left: 12px;
+}
+
+.search-input-data::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  line-height: 26;
 }
 
 .search-date {
@@ -377,6 +395,7 @@ ul {
   justify-content: space-between;
   margin-bottom: 29px;
 }
+
 .label-text {
   line-height: 26px;
   padding-top: 7px;
@@ -384,6 +403,7 @@ ul {
   height: 24px;
 
 }
+
 .input-data-wrapper {
   display: flex;
   width: 346px;
@@ -391,23 +411,20 @@ ul {
   background-color: var(--basic-light);
   align-items: center;
 }
-.sample-data {
-  margin: 0;
-  padding-left: 12px;
-  line-height: 26;
-}
 
 .calendar {
   margin-left: auto;
   padding-right: 8px;
 }
+
 .search-number-people {
   display: flex;
   justify-content: space-between;
 }
+
 .input-number-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 114px;
   height: 38px;
   background-color: var(--basic-light);
@@ -417,9 +434,23 @@ ul {
   box-sizing: border-box;
   margin-left: 40px;
 }
+
 .search-number {
   display: flex;
 }
+
+.button-number {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
 .search-input-number {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -433,6 +464,7 @@ ul {
   text-align: center;
   padding: 0;
 }
+
 .button-search {
   margin-top: 54px;
   padding: 16px 182px;
@@ -442,28 +474,36 @@ ul {
   font-size: 21px;
 
 }
-.input-data-wrapper:hover{
+
+.input-data-wrapper:hover {
   background-color: var(--special-gray-input);
 }
+
 .input-data-wrapper:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-gray-line);
 }
+
 .calendar:hover path {
   fill: var(--basic-black);
 }
+
 .calendar:active path {
   fill: var(--special-blue);
 }
+
 .plus:hover path {
   fill: var(--basic-black);
 }
+
 .plus:active path {
   fill: var(--special-blue);
 }
+
 .minus:hover rect {
   fill: var(--basic-black);
 }
+
 .minus:active rect {
   fill: var(--special-blue);
 }
@@ -476,9 +516,10 @@ ul {
   text-transform: uppercase;
   border: none;
 }
+
 .button-mini {
   padding: 3px 17px 3px 16px;
-  }
+}
 
 .button-big {
   font-size: 21px;
@@ -508,6 +549,7 @@ ul {
   /*display: block;*/
 
 }
+
 /*Footer*/
 
 .main-footer {
@@ -518,6 +560,7 @@ ul {
   justify-content: space-around;
   padding: 23px 0 36px;
 }
+
 .home-footer {
   position: absolute;
 }
@@ -760,6 +803,7 @@ ul {
 .star:last-child {
   margin-right: 0;
 }
+
 .filters {
   background-image: url(../img/background.jpg);
   width: 1200px;
@@ -776,10 +820,12 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 .type-housing {
   padding-left: 117px;
 
 }
+
 .filter-title {
   margin-bottom: 24px;
   font-size: 16px;
@@ -793,14 +839,17 @@ ul {
   font-weight: 400;
   color: var(--basic-white);
 }
+
 .filter-option {
   margin-bottom: 25px;
   position: relative;
   margin-left: 42px;
 }
+
 .filter-option:last-child {
   margin-bottom: 0;
 }
+
 .label::before {
   content: "";
   position: absolute;
@@ -811,9 +860,7 @@ ul {
   border: 2px solid var(--basic-white);
   border-radius: 5px;
 }
-.filter-checkbox input:hover {
-  border: 2px solid var(--special-gray-disabled);
-}
+
 /*Как здесь обратится по другому? что бы правильно было */
 .filter-input-checkbox:checked + .label::after {
   content: "";
@@ -825,15 +872,18 @@ ul {
   background-image: url(../img/check_mark.svg);
   background-repeat: no-repeat;
 }
+
 .cost {
   margin-left: auto;
+
 }
+
 .cost-title {
   margin-bottom: 0;
 }
 
 .button-show {
- font-weight: 400;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-white);
   width: 137px;
@@ -841,15 +891,18 @@ ul {
   border: 2px solid var(--basic-white);
   background-color: transparent;
   border-radius: 2px;
-  margin-right: 95px;
+  /*margin-right: 95px;*/
 }
+
 .button-filter {
   align-self: flex-end;
 }
+
 .range-filter {
   margin-top: 13px;
   width: 317px;
 }
+
 .range-controls {
   /*height: 16px;
   background-color: rgba(var(--basic-black) 0);*/
@@ -868,6 +921,7 @@ ul {
   height: 2px;
   background: var(--basic-white);
 }
+
 .toggle {
   position: absolute;
   top: -10px;
@@ -885,11 +939,13 @@ ul {
 .range-controls .toggle-max {
   left: 248px;
 }
+
 .price-controls label {
   text-transform: uppercase;
   font-weight: 400;
   color: var(--basic-white);
 }
+
 .price-controls input {
   font-weight: inherit;
   color: inherit;
@@ -900,24 +956,17 @@ ul {
 }
 
 .price-controls {
-  position: relative;/*
-  justify-content: space-between;*/
+  position: relative;
+  /*
+    justify-content: space-between;*/
   /*display: flex;*/
   width: 317px;
   height: 36px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
- /* margin: 0;*/
+  /* margin: 0;*/
 
 }
-
-
-
-
-
-
-
-
 
 
 /*.price-form {
