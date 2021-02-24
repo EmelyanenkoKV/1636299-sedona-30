@@ -371,6 +371,15 @@ ul {
   left: 317px;
 }
 
+.input-data-wrapper {
+  display: flex;
+  width: 346px;
+  height: 38px;
+  background-color: var(--basic-light);
+  align-items: center;
+  position: relative;
+}
+
 .search-input-data {
   background-color: transparent;
   border: none;
@@ -401,20 +410,11 @@ ul {
   padding-top: 7px;
   margin: 0;
   height: 24px;
-
-}
-
-.input-data-wrapper {
-  display: flex;
-  width: 346px;
-  height: 38px;
-  background-color: var(--basic-light);
-  align-items: center;
 }
 
 .calendar {
-  margin-left: auto;
-  padding-right: 8px;
+  margin-left: 90%;
+  position: absolute;
 }
 
 .search-number-people {
@@ -472,16 +472,16 @@ ul {
   height: 58px;
   line-height: 26px;
   font-size: 21px;
-
 }
 
 .input-data-wrapper:hover {
   background-color: var(--special-gray-input);
 }
 
-.input-data-wrapper:focus {
+.search-input-data:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-gray-line);
+  outline: none;
 }
 
 .calendar:hover path {
@@ -850,28 +850,80 @@ ul {
   margin-bottom: 0;
 }
 
-.label::before {
+.checkbox-no-checked::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: -5px;
   width: 23px;
   height: 23px;
-  border: 2px solid var(--basic-white);
-  border-radius: 5px;
+  left: -42px;
+  top: -5px;
+  background-image: url(../img/no-checked.svg);
+  background-repeat: no-repeat;
 }
 
-/*Как здесь обратится по другому? что бы правильно было */
-.filter-input-checkbox:checked + .label::after {
+.checkbox-checked::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: -42px;
+  top: -5px;
+  background-image: url(../img/checked.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
   width: 22px;
   height: 17px;
-  left: -34px;
-  top: -2px;
+  left: -38px;
+  top: -4px;
   background-image: url(../img/check_mark.svg);
   background-repeat: no-repeat;
 }
+
+.filter-input-checkbox:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: -42px;
+  top: -5px;
+  background-image: url(../img/checked_disabled.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 17px;
+  left: -38px;
+  top: -4px;
+  background-image: url(../img/chek_mark_disabled.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: -42px;
+  top: -5px;
+  background-image: url(../img/checked_no_disabled.svg);
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
 
 .cost {
   margin-left: auto;
