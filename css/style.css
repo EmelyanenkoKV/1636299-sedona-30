@@ -856,7 +856,6 @@ ul {
   width: 23px;
   height: 23px;
   left: -42px;
-  top: -5px;
   background-image: url(../img/no-checked.svg);
   background-repeat: no-repeat;
 }
@@ -867,7 +866,7 @@ ul {
   width: 23px;
   height: 23px;
   left: -42px;
-  top: -5px;
+  top: 1px;
   background-image: url(../img/checked.svg);
   background-repeat: no-repeat;
 }
@@ -878,7 +877,7 @@ ul {
   width: 22px;
   height: 17px;
   left: -38px;
-  top: -4px;
+  top: 2px;
   background-image: url(../img/check_mark.svg);
   background-repeat: no-repeat;
 }
