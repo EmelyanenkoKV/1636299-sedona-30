@@ -1,29 +1,76 @@
-const searchForm = document.querySelector('.search-form');
-const buttonBig = document.querySelector('.button-big');
-const dateIn = searchForm.querySelector('[name = date-in]');
-const dateOut = searchForm.querySelector('[name = date-out]');
-const adults = searchForm.querySelector('[name = adults]');
-const kids = searchForm.querySelector('[name = kids]');
-const form = searchForm.querySelector('form');
-const storage = localStorage.getItem("dateIn");
-buttonBig.onclick = function () {
-  searchForm.classList.toggle('modal-close');
-  dateIn.focus();
+const searchForm = document.querySelector(".search-form");
+const buttonBig = document.querySelector(".button-big");
+const dateIn = searchForm.querySelector("[name = date-in]");
+const dateOut = searchForm.querySelector("[name = date-out]");
+const adults = searchForm.querySelector("[name = adults]");
+const kids = searchForm.querySelector("[name = kids]");
+const form = searchForm.querySelector("form");
+let isStorageSupport = true;
+let storage = "";
+
+try {
+  storage = localStorage.getItem("dateIn");
+} catch (err) {
+  isStorageSupport = false;
 }
-form.addEventListener("submit", function (evt) {
-  if (!dateIn.value || !dateOut.value) {
-    evt.preventDefault();
-    console.log("нужно дату заезда и дату выезда");
+buttonBig.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  searchForm.classList.toggle("modal-show");
+  dateIn.focus();
+  if (storage) {
+    dateIn.value = storage;
+    dateOut.focus();
+  } else {
+    dateIn.focus();
   }
-  else {
-    localStorage.setItem("dateIn", dateIn.value);
+});
+
+buttonBig.onclick = function () {
+  searchForm.classList.toggle("modal-close");
+  searchForm.classList.remove("modal-error");
+  searchForm.classList.toggle("modal-show");
+}
+try {
+  storageAdult = localStorage.getItem("adult");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+try {
+  storageKids = localStorage.getItem("kids");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+form.addEventListener("submit", function (evt) {
+  if (!dateIn.value || !dateOut.value || !adults.value || !kids.value) {
+    evt.preventDefault();
+    searchForm.classList.remove("modal-error");
+    searchForm.offsetWidth = searchForm.offsetWidth;
+    searchForm.classList.add("modal-error");
+
+    /*console.log("Введите данные");*/ /*Эту строку нужно оставлять?*/
+
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("dataIn", dateIn.value);
+      localStorage.setItem("dataIn", dateOut);
+      localStorage.setItem("dataIn", adults.value);
+      localStorage.setItem("dataIn", kids.value);
+    }
   }
 })
-form.addEventListener("submit", function (evt) {
-  if (!adults.value || !kids.value) {
-    evt.preventDefault();
-    console.log("нужно выбрать количество взрослых и детей")
+
+/* Окно не закрывается с клавиши ESC */
+
+window.addEventListener("keydown", function (evt:) {
+  if (evt.keyCode === 27) {
+    if (searchForm.classList.contains("modal-show")) {
+      evt.preventDefault();
+      searchForm.classList.remove("modal-show");
+      searchForm.classList.remove("modal-error");
+    }
   }
-})
+});
 
 
