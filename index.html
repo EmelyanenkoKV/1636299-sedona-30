@@ -105,11 +105,12 @@
     <button class="button button-big button-brown" type="button" aria-label="Форма для выбора дат и количества человек">
       Поиcк гостиницы в Седоне
     </button>
-    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+    <section class="search-form modal-close">
+    <form class="<!--search-form modal-close--> form-hotels" action="https://echo.htmlacademy.ru" method="post">
       <label class="search-date" for="search-date-in">
         <p class="label-text">Дата заезда:</p>
         <div class="input-data-wrapper">
-          <input class="search-input-data" id="search-date-in" type="text" name="date" placeholder="24 апреля 2017">
+          <input class="search-input-data" id="search-date-in" type="text" name="date-in" placeholder="24 апреля 2017">
           <svg class="calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -124,7 +125,7 @@
       <label class="search-date" for="search-date-out">
         <p class="label-text">Дата выезда:</p>
         <div class="input-data-wrapper">
-          <input class="search-input-data" id="search-date-out" type="text" name="date" placeholder="4 июля 2017">
+          <input class="search-input-data" id="search-date-out" type="text" name="date-out" placeholder="4 июля 2017">
           <svg class="calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -178,10 +179,11 @@
           </div>
         </label>
       </div>
-      <button class="button button-search button-blue" type="button"
+      <button class="button button-search button-blue" type="submit"
               aria-label="Отобразить найденный результат по заданым параметрам">Найти
       </button>
     </form>
+    </section>
   </section>
   <section class="map">
     <h2 class="visually-hidden">Как до нас добраться?</h2>

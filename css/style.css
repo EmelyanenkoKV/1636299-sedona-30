@@ -388,6 +388,12 @@ ul {
   height: 38px;
   margin: 0;
   padding-left: 12px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  line-height: 26;
 }
 
 .search-input-data::placeholder {
@@ -460,6 +466,7 @@ ul {
   width: 36px;
   height: 26px;
   border: none;
+  outline: none;
   background-color: transparent;
   text-align: center;
   padding: 0;
@@ -540,7 +547,12 @@ ul {
   background-color: var(--special-brown-dark);
   color: var(--special-white);
 }
-
+.modal-show {
+  display: block;
+}
+.modal-close {
+  display: none;
+}
 /*Map*/
 .map {
   width: 1199px;
@@ -571,7 +583,9 @@ ul {
   line-height: 26px;
   color: var(--basic-black);
 }
-
+.footer-address {
+  font-style: normal;
+}
 .hashtag {
   padding-left: 45px;
 }
