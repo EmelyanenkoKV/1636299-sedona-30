@@ -63,7 +63,7 @@ form.addEventListener("submit", function (evt) {
 
 /* Окно не закрывается с клавиши ESC */
 
-window.addEventListener("keydown", function (evt:) {
+window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (searchForm.classList.contains("modal-show")) {
       evt.preventDefault();
