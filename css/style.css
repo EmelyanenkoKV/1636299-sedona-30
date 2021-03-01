@@ -39,9 +39,17 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   --special-gray-line: #E5E5E5;
   --special-gray: #CACACA;
   --special-gray-disabled: #6A6A6A;
-  --special-gray--controls: #ABABAB;
+  --special-link-black: rgba(0, 0, 0, .3);
   --special-white: rgba(255, 255, 255, .3);
+  --special-gray--controls: #ABABAB;
   --special-gray--shadow: rgba(177, 177, 177, .3);
+
+  --background-image-pink: #CD5C5C;
+  --background-image-green: #2E8B57;
+  --background-image-blue: #5F9EA0;
+  --background-image-red: #FFA07A;
+  --background-image-brown: #A0522D;
+
 }
 
 /* Global */
@@ -162,16 +170,23 @@ ul {
   text-align: right;
 }
 
+.site-item:nth-child(2) {
+  padding-left: 25px;
+}
+
 .site-item:nth-child(3) {
   grid-column-start: 4;
+  padding-right: 10px;
 }
 
 .navigation-item {
   color: var(--basic-black);
 }
 
-.navigation-item:hover {
+.navigation-item:hover,
+.navigation-item:focus {
   color: var(--special-blue);
+  outline: none;
 }
 
 .navigation-item:active {
@@ -205,20 +220,20 @@ ul {
   background: url(../img/Shape.svg);
   width: 1200px;
   height: 57px;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .promo {
-  padding: 45px;
+  padding: 27px 300px 50px;
   margin: 0;
 }
 
 .promo-slogan {
-  margin: 0 300px 34px;
+  margin-bottom: 43px;
 }
 
 .promo-text {
-  margin: 16px 0;
+  margin: 0;
 }
 
 /* Features */
@@ -238,6 +253,7 @@ ul {
   grid-column-end: 4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .feature-img-first {
@@ -245,6 +261,7 @@ ul {
   grid-column-end: 4;
   width: 800px;
   height: 256px;
+  background-color: var(--background-image-red);
 }
 
 .feature-img-second {
@@ -252,10 +269,12 @@ ul {
   grid-column-end: 3;
   width: 800px;
   height: 256px;
+  background-color: var(--background-image-brown);
 }
 
-.feature-item .title {
+.mini-title {
   position: relative;
+  margin-bottom: 25px;
 }
 
 .house::before {
@@ -264,7 +283,7 @@ ul {
   width: 75px;
   background: url(../img/icon-1.svg) no-repeat;
   position: absolute;
-  bottom: 50px;
+  bottom: 45px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -297,63 +316,75 @@ ul {
   grid-column-start: 1;
   grid-column-end: 4;
   box-sizing: border-box;
-  margin: 160px auto 82px;
+  margin: 133px auto 80px;
 }
 
-.features-desc-mini {
-  padding: 0 40px;
+.features-text-mini {
+  padding: 0 55px;
+  margin: 0;
 }
 
 .feature-blue {
   color: var(--basic-white);
   background-color: var(--special-blue);
-  padding: 43px;
-
+  padding: 48px;
+  height: 256px;
+  box-sizing: border-box;
 }
 
 .feature-subtitle {
-  margin: 0 55px;
+  margin: 0;
+  padding: 0 77px;
 }
 
 .number {
-  margin: 25px auto;
+  margin: 26px auto 25px;
+}
+
+.feature-text {
+  margin: 0;
 }
 
 .feature-gray {
   background-color: var(--basic-light-gray);
+  padding: 47px 70px 54px;
   margin: 0;
-  padding-top: 47px;
-  min-height: 256px;
+  height: 256px;
   box-sizing: border-box;
   text-align: center;
 }
 
 .feature-subtitle-gray {
-  padding: 0 130px;
+  margin: 0;
+  padding: 0 55px;
+}
+
+.feature-text-gray {
   margin: 0;
 }
 
-.features-desc {
-  padding: 0 71px;
+.feature-five {
+  padding-left: 2px;
 }
 
 /*Search*/
 
 .search-hotels {
   text-align: center;
-  padding-top: 58px;
+  margin-top: 58px;
 }
 
 .search-title {
   font-size: 30px;
   line-height: 24px;
+  padding: 0 457px 4px 446px;
   margin: 0;
 }
 
 .search-info {
   line-height: 24px;
-  margin: 4px auto 24px;
-  padding-top: 15px;
+  padding: 29px 382px 42px;
+  margin: 0;
   text-align: center;
 }
 
@@ -402,7 +433,7 @@ ul {
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  line-height: 26;
+  line-height: 26px;
 }
 
 .search-date {
@@ -441,6 +472,10 @@ ul {
   margin-left: 40px;
 }
 
+.input-number-wrapper-kids {
+  margin-left: 28px;
+}
+
 .search-number {
   display: flex;
 }
@@ -452,9 +487,17 @@ ul {
   display: flex;
   width: 38px;
   height: 38px;
-  padding: 0;
   justify-content: center;
   align-items: center;
+  padding: 0;
+}
+
+.button-minus {
+  padding-right: 15px;
+}
+
+.button-plus {
+  padding-left: 12px;
 }
 
 .search-input-number {
@@ -539,24 +582,30 @@ ul {
   background-color: var(--special-brown-light);
 }
 
-.button-brown:hover {
+.button-brown:hover,
+.button-brown:focus {
   background-color: var(--special-brown);
+  outline: none;
 }
 
 .button-brown:active {
   background-color: var(--special-brown-dark);
   color: var(--special-white);
 }
+
 .modal-show {
   display: block;
   animation: bounce 0.6s;
 }
+
 .modal-close {
   display: none;
 }
+
 .modal-error {
   animation: shake 0.6s;
 }
+
 /*Map*/
 .map {
   width: 1199px;
@@ -571,10 +620,13 @@ ul {
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
+  height: 120px;
   bottom: 0;
   display: flex;
   justify-content: space-around;
-  padding: 23px 0 36px;
+  align-items: center;
+  padding: 30px 49px 40px 35px;
+  box-sizing: border-box;
 }
 
 .home-footer {
@@ -583,13 +635,16 @@ ul {
 
 .footer-contacts {
   margin: 0;
+  padding-bottom: 10px;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
 }
+
 .footer-address {
   font-style: normal;
 }
+
 .hashtag {
   padding-left: 45px;
 }
@@ -605,6 +660,7 @@ ul {
   align-content: center;
   width: 150px;
   padding-top: 5px;
+  padding-right: 10px;
   margin: 0;
 }
 
@@ -617,8 +673,10 @@ ul {
   background-color: var(--special-blue);
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
   background-color: var(--special-blue-extra);
+  outline: none;
 }
 
 .social-button:active {
@@ -633,12 +691,16 @@ ul {
   display: flex;
   width: 196px;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-right: 39px;
+  padding-top: 11px;
 }
 
-.copyright:hover path {
+.copyright:hover path,
+.copyright:focus path {
   fill: var(--special-blue);
+}
+
+.copyright:focus {
+  outline: none;
 }
 
 .copyright:active path {
@@ -648,6 +710,8 @@ ul {
 .text-copyright {
   line-height: 26px;
   font-weight: 400;
+  margin: 0;
+  padding-top: 10px;
 }
 
 /* Стилизация внутренней страницы*/
@@ -678,19 +742,24 @@ ul {
   width: 34px;
 }
 
-/*Не уверена что сделала верно.
-Задала свойство ссылке только стрелочке вверх, по макету вторая нажата, соответственно не активная.
-Нужно задать свойство общему классу стрелок и что-то сделать с не активной, или так верно?
-Получается что если так, то много лишних кассов. Нужет совет, классы никакие не убирала */
 .ascending path {
   font: var(--special-gray);
 }
 
-.ascending:hover path {
+.arrow:focus path {
+  fill: var(--basic-black);
+
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover path {
   fill: var(--basic-black);
 }
 
-.ascending:active path {
+.arrow:active path {
   fill: var(--special-blue);
 }
 
@@ -704,14 +773,14 @@ ul {
 .assortment-item {
   display: flex;
   margin-right: 32px;
-  color: var(--basic-black);
-  opacity: 0.3;
+  color: var(--special-link-black);
   border-bottom: 1px dashed var(--special-blue);
 }
 
-.assortment-item:hover {
+.assortment-item:hover,
+.assortment-item:focus {
   color: var(--special-blue);
-  opacity: 1;
+  outline: none;
 }
 
 .assortment-item:active {
@@ -722,7 +791,6 @@ ul {
 .active-item {
   color: var(--special-blue);
   border-bottom-style: none;
-  opacity: 1;
 }
 
 .hotels-list {
@@ -741,10 +809,22 @@ ul {
   padding: 30px 73px;
 }
 
-.hotels-foto {
+.hotels-image {
   width: 135px;
   height: 90px;
   margin-right: 29px;
+}
+
+.img-Amara-Resort-and-Spa {
+  background: var(--background-image-pink);
+}
+
+.img-Desert-Quail-Inn {
+  bottom: var(--background-image-blue);
+}
+
+.img-Villas-at-Poco-Diablo {
+  background: var(--background-image-green);
 }
 
 .type-price {
@@ -777,8 +857,10 @@ ul {
   background-color: var(--special-blue);
 }
 
-.button-blue:hover {
+.button-blue:hover,
+.button-blue:focus {
   background-color: var(--special-blue-extra);
+  outline: none;
 }
 
 .button-blue:active {
@@ -794,8 +876,10 @@ ul {
   background-color: var(--basic-light);
 }
 
-.hotels:hover {
+.hotels:hover,
+.hotels:focus {
   color: var(--special-blue);
+  outline: none;
 }
 
 .hotels:active {
@@ -1060,9 +1144,11 @@ ul {
   margin-left: 80px;
 }
 
-.button-show:hover {
+.button-show:hover,
+.button-show:focus {
   background-color: var(--basic-white);
   color: var(--basic-black);
+  outline: none;
 }
 
 .button-filter {
@@ -1086,6 +1172,7 @@ ul {
     transform: translateY(0);
   }
 }
+
 @keyframes shake {
   0%,
   100% {

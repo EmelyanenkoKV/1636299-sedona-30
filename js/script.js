@@ -1,3 +1,37 @@
+const buttonBig = document.querySelector(".button-big");
+const searchForm = document.querySelector(".search-form")
+
+buttonBig.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  searchForm.classList.toggle("modal-show");
+});
+
+buttonBig.onclick = function () {
+  searchForm.classList.toggle("modal-close");
+  searchForm.classList.toggle("modal-show");
+}
+
+document.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (searchForm.classList.contains("modal-show")) {
+      evt.preventDefault();
+      searchForm.classList.remove("modal-show");
+    }
+  }
+  });
+
+/*
+searchForm.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (searchForm.classList.contains("modal-show")) {
+      evt.preventDefault();
+      searchForm.classList.remove("modal-show");
+    }
+  }
+);*/
+
+/*
+
 const searchForm = document.querySelector(".search-form");
 const buttonBig = document.querySelector(".button-big");
 const dateIn = searchForm.querySelector("[name = date-in]");
@@ -49,7 +83,7 @@ form.addEventListener("submit", function (evt) {
     searchForm.offsetWidth = searchForm.offsetWidth;
     searchForm.classList.add("modal-error");
 
-    /*console.log("Введите данные");*/ /*Эту строку нужно оставлять?*/
+    /!*console.log("Введите данные");*!/ /!*Эту строку нужно оставлять?*!/
 
   } else {
     if (isStorageSupport) {
@@ -58,10 +92,10 @@ form.addEventListener("submit", function (evt) {
       localStorage.setItem("dataIn", adults.value);
       localStorage.setItem("dataIn", kids.value);
     }
-  }
-})
 
-/* Окно не закрывается с клавиши ESC */
+};
+
+/!* Окно не закрывается с клавиши ESC *!/
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -71,6 +105,7 @@ window.addEventListener("keydown", function (evt) {
       searchForm.classList.remove("modal-error");
     }
   }
-});
+);
 
+*/
 
