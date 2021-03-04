@@ -198,7 +198,6 @@ ul {
   color: var(--special-brown-light);
 }
 
-/*Conteiner*/
 
 .welcome-image {
   margin: 0 auto;
@@ -402,29 +401,35 @@ ul {
   left: 317px;
 }
 
-.input-data-wrapper {
+.wrapper-search {
   display: flex;
-  width: 346px;
+  justify-content: space-between;
+  margin-bottom: 29px;
   height: 38px;
-  background-color: var(--basic-light);
   align-items: center;
   position: relative;
+
+}
+
+.search-date {
+  margin-right: 12px;
 }
 
 .search-input-data {
-  background-color: transparent;
   border: none;
   outline: none;
   width: 346px;
   height: 38px;
   margin: 0;
-  padding-left: 12px;
+  box-sizing: border-box;
+  padding-left: 13px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
   line-height: 26;
+  background-color: var(--basic-light);
 }
 
 .search-input-data::placeholder {
@@ -436,27 +441,27 @@ ul {
   line-height: 26px;
 }
 
-.search-date {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 29px;
-}
-
-.label-text {
-  line-height: 26px;
-  padding-top: 7px;
-  margin: 0;
-  height: 24px;
-}
-
 .calendar {
-  margin-left: 90%;
+  margin-left: 93%;
   position: absolute;
+}
+
+.wrapper-search-people {
+  margin-bottom: 0;
 }
 
 .search-number-people {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 53px;
+}
+
+.search-number-adults {
+  margin-right: 40px;
+}
+
+.search-number-kids {
+  margin-right: 28px;
 }
 
 .input-number-wrapper {
@@ -469,15 +474,6 @@ ul {
   padding: 6px 12px;
   text-align: center;
   box-sizing: border-box;
-  margin-left: 40px;
-}
-
-.input-number-wrapper-kids {
-  margin-left: 28px;
-}
-
-.search-number {
-  display: flex;
 }
 
 .button-number {
@@ -516,7 +512,6 @@ ul {
 }
 
 .button-search {
-  margin-top: 54px;
   padding: 16px 182px;
   width: 458px;
   height: 58px;
