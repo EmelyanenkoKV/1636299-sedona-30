@@ -38,7 +38,7 @@
     <h2 class="visually-hidden">Фильтр гостиниц</h2>
     <form class="filter-category" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
       <fieldset class="filter infrastructure">
-        <legend class="filter-title">Инфрастуктура:</legend>
+        <legend class="filter-title">Инфраструктура:</legend>
         <ul class="filter-list">
           <li class="filter-option">
             <input class="visually-hidden filter-input-checkbox " type="checkbox" name="pool"
@@ -81,14 +81,14 @@
         <legend class="filter-title cost-title">Стоимость в сутки (р):</legend>
         <div class="range-filter">
           <div class="price-controls">
-            <label class="price min-price">
-              <p class="text-price">от</p>
-              <input class="price-number" type="text" name="min-price" placeholder="0">
-            </label>
-            <label class="price max-price">
-              <p class="text-price">до</p>
-              <input class="price-number" type="text" name="max-price" placeholder="3000">
-            </label>
+            <div class="price min-price">
+              <label class="price-text" for="min-price">от</label>
+              <input class="price-number thin-text" type="text" name="min-price" placeholder="0" id="min-price">
+            </div>
+            <div class="price max-price">
+              <label class="price-text" for="max-price">до</label>
+              <input class="price-number thin-text" type="text" name="max-price" placeholder="3000" id="max-price">
+            </div>
           </div>
           <div class="range-controls">
             <div class="scale">
@@ -107,15 +107,17 @@
   <section class="section-result">
     <h2 class="visually-hidden">Результаты поиска отелей в Седоне</h2>
     <div class="sorting">
-      <p class="title high-line sorting-title">Найдено:3</p>
-      <h3 class="assortment thin-text sorting-subtitle">Сортировка:</h3>
-      <ul class="assortment-list">
-        <li class="assortment thin-text">
+      <p class="title high-line sorting-title">Найдено:
+        <span class="title high-line">3</span>
+      </p>
+      <h3 class="thin-text sorting-subtitle">Сортировка:</h3>
+      <ul class="assortment-list thin-text">
+        <li>
           <a class="assortment-item active-item" href="#">По цене</a></li>
-        <li class="assortment thin-text">
+        <li>
           <a class="assortment-item" href="#">По типу</a>
         </li>
-        <li class="assortment thin-text">
+        <li>
           <a class="assortment-item" href="#">По рейтингу</a>
         </li>
       </ul>
@@ -138,7 +140,7 @@
     </div>
     <ul class="hotels-list">
       <li class="hotels-item">
-        <img class="hotels-image img-Amara-Resort-and-Spa" src="img/AMARA_RESORT_anad_SPA.jpg" width="135" height="90"
+        <img class="hotels-image img-Amara-Resort-and-Spa" src="img/AMARA_RESORT_and_SPA.jpg" width="135" height="90"
              alt="Фото гостиницы Amara Resort and Spa">
         <div class="hotels-info">
           <h3 class="title high-line hotels">

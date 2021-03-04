@@ -26,7 +26,7 @@
         <a class="navigation-item" href="catalog.html">гостиницы</a>
       </li>
     </ul>
-    <a class="main-header-logo" href="index.html">
+    <a class="main-header-logo" href="index.html" aria-label="Главная страница">
       <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
     </a>
   </nav>
@@ -103,7 +103,7 @@
     <h2 class="search-title">Заинтересовались?</h2>
     <p class="search-info thin-text gray-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
       предложения гостиниц в Седоне</p>
-    <button class="button button-big button-brown" type="button"> Поиск гостиницы в Седоне</button>
+    <button class="button button-big button-brown" type="button">Поиск гостиницы в Седоне</button>
     <section class="search-form modal-close">
       <form class="form-hotels" action="https://echo.htmlacademy.ru" method="post">
         <div class="wrapper-search">
@@ -138,16 +138,16 @@
           <div class="wrapper-search wrapper-search-people">
             <label class="high-line search-number-adults" for="search-adults">Взрослые:</label>
             <div class="input-number-wrapper">
-              <button class="button-number button-minus" type="button"
+              <button class="button-number" type="button"
                       aria-label="Уменьшить количество взрослых на один">
                 <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                   <rect width="12" height="3" fill="#A9A9A9"/>
                 </svg>
               </button>
-              <input class="search-input-number" type="text" name="adults" min="1" value="2" id="search-adults"
+              <input class="search-input-number" type="text" name="adults" value="2" id="search-adults"
                      required>
-              <button class="button-number button-plus" type="button"
+              <button class="button-number" type="button"
                       aria-label="Увеличить количество взрослых на один">
                 <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
@@ -161,14 +161,14 @@
           <div class="wrapper-search wrapper-search-people">
             <label class="high-line search-number-kids" for="search-kids">Дети:</label>
             <div class="input-number-wrapper">
-              <button class="button-number button-minus" type="button" aria-label="Уменьшить количество детей на один">
+              <button class="button-number" type="button" aria-label="Уменьшить количество детей на один">
                 <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                   <rect width="12" height="3" fill="#A9A9A9"/>
                 </svg>
               </button>
-              <input class="search-input-number" type="text" name="kids" min="0" value="0" id="search-kids" required>
-              <button class="button-number button-plus" type="button" aria-label="Увеличить количество детей на один">
+              <input class="search-input-number" type="text" name="kids" value="0" id="search-kids" required>
+              <button class="button-number" type="button" aria-label="Увеличить количество детей на один">
                 <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -192,11 +192,9 @@
   </section>
 </main>
 <footer class="main-footer home-footer">
-  <address class="footer-address">
+  <address class="footer-address high-line">
     <a class="footer-contacts hashtag" href="#" target="_blank">#visitSEDONA</a>
-    <p class="footer-contacts phone"> ТЕЛ:
-      <a class="footer-contacts" href="tel:+74956660166">+7(495) 666-01-66</a>
-    </p>
+    <a class="footer-contacts phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
   </address>
   <ul class="social-list">
     <li>
@@ -229,7 +227,7 @@
     </li>
   </ul>
   <div class="footer-copyright">
-    <p class="text-copyright">website by</p>
+    <p class="text-copyright high-line thin-text">website by</p>
     <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
       <span class="visually-hidden">html academy</span>
       <svg width="115" height="41" viewBox="0 0 115 41" fill="none" xmlns="http://www.w3.org/2000/svg">
