@@ -43,19 +43,20 @@
           <li class="filter-option">
             <input class="visually-hidden filter-input-checkbox " type="checkbox" name="pool"
                    id="filter-pool" checked>
-            <label class="checkbox-checked checkbox-name" for="filter-pool">Бассейн</label>
+            <label class="checkbox-name" for="filter-pool">Бассейн</label>
           </li>
           <li class="filter-option">
             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking"
                    id="filter-parking">
-            <label class="checkbox-no-checked" for="filter-parking">Парковка</label>
+            <label class="checkbox-name" for="filter-parking">Парковка</label>
           </li>
           <li class="filter-option filter-checkbox">
             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wi-fi"
                    id="filter-wi-fi">
-            <label class="checkbox-no-checked" for="filter-wi-fi">wi-fi</label>
+            <label class="checkbox-name" for="filter-wi-fi">wi-fi</label>
           </li>
         </ul>
+
       </fieldset>
       <fieldset class="filter type-housing">
         <legend class="filter-title">Тип жилья:</legend>
@@ -63,17 +64,17 @@
           <li class="filter-option filter-checkbox">
             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel"
                    id="filter-hotel" checked>
-            <label class="checkbox-checked" for="filter-hotel">Гостиница</label>
+            <label class="checkbox-name" for="filter-hotel">Гостиница</label>
           </li>
           <li class="filter-option filter-checkbox">
             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel"
                    id="filter-motel" checked>
-            <label class="checkbox-checked" for="filter-motel">Мотель</label>
+            <label class="checkbox-name" for="filter-motel">Мотель</label>
           </li>
           <li class="filter-option filter-checkbox">
             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartments"
                    id="filter-apartments" checked>
-            <label class="checkbox-checked" for="filter-apartments">Апартаменты</label>
+            <label class="checkbox-name" for="filter-apartments">Апартаменты</label>
           </li>
         </ul>
       </fieldset>
@@ -81,14 +82,14 @@
         <legend class="filter-title cost-title">Стоимость в сутки (р):</legend>
         <div class="range-filter">
           <div class="price-controls">
-            <div class="price min-price">
-              <label class="price-text" for="min-price">от</label>
-              <input class="price-number thin-text" type="text" name="min-price" placeholder="0" id="min-price">
-            </div>
-            <div class="price max-price">
-              <label class="price-text" for="max-price">до</label>
-              <input class="price-number thin-text" type="text" name="max-price" placeholder="3000" id="max-price">
-            </div>
+            <label class="price min-price thin-text">
+              от
+              <input class="price-number" type="text" name="min-price" placeholder="0">
+            </label>
+            <label class="price max-price thin-text">
+              до
+              <input class="price-number" type="text" name="max-price" placeholder="3000">
+            </label>
           </div>
           <div class="range-controls">
             <div class="scale">
@@ -272,10 +273,9 @@
   </section>
 </main>
 <footer class="main-footer">
-  <address class="footer-address">
-    <a class="footer-contacts hashtag" href="#" target="_blank">#visitsedona</a>
-    <p class="footer-contacts phone"> ТЕЛ: <a class="footer-contacts" href="tel:+74956660166">+7 (495)
-      666-01-66</a></p>
+  <address class="footer-address high-line">
+    <a class="footer-contacts hashtag" href="#" target="_blank">#visitSEDONA</a>
+    <a class="footer-contacts phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
   </address>
   <ul class="social-list">
     <li>

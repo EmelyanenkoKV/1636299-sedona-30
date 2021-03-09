@@ -422,7 +422,7 @@ ul {
   height: 38px;
   margin: 0;
   box-sizing: border-box;
-  padding-left: 13px;
+  padding: 6px 0 6px 13px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -583,7 +583,7 @@ ul {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  /*animation: bounce 0.6s;*/
 }
 
 .modal-close {
@@ -613,7 +613,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 23px 49px 40px 35px;
+  padding: 23px 49px 36px 35px;
   box-sizing: border-box;
 }
 
@@ -725,9 +725,9 @@ ul {
 
 .sorting-controls {
   display: flex;
-  margin: 0 0 0 auto;
   justify-content: space-between;
   width: 34px;
+  margin-left: auto;
 }
 
 .ascending path {
@@ -753,14 +753,13 @@ ul {
 
 .assortment-list {
   display: flex;
-  margin: 0;
-  /*justify-content: space-around;*/
   list-style: none;
+  margin: 0;
 }
 
 .assortment-item {
-  /*  display: flex;*/
-  /*margin-right: 32px;*/
+  display: flex;
+  margin-right: 33px;
   font-size: 12px;
   line-height: 18px;
   color: var(--special-link-black);
@@ -786,9 +785,9 @@ ul {
 .hotels-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 50px;
   padding: 0;
   list-style: none;
+  margin: 0;
 }
 
 .hotels-item {
@@ -797,6 +796,8 @@ ul {
   border-bottom: 1px solid var(--special-gray-line);
   display: flex;
   padding: 30px 73px;
+  height: 150px;
+  box-sizing: border-box;
 }
 
 .hotels-image {
@@ -821,20 +822,21 @@ ul {
   display: flex;
 }
 
+.hotels-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .type-price-text {
   width: 107px;
-  margin: 5px 9px 15px 0;
+  margin: 7px 9px 15px 0;
 }
 
 .hotels {
   margin: 0;
   padding: 0;
   color: var(--basic-black);
-}
-
-.hotels-info {
-  display: flex;
-  flex-direction: column;
 }
 
 .result-buttons a {
@@ -883,7 +885,7 @@ ul {
 }
 
 .stars-list {
-  padding-bottom: 47px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: flex-end;
 }
@@ -899,12 +901,13 @@ ul {
 .filters {
   background-image: url(../img/background.jpg);
   width: 1200px;
-  height: 217px;
+  background-size: cover;
 }
 
 .filter-category {
   display: flex;
   padding: 27px 73px 31px;
+  flex-wrap: wrap;
 }
 
 .filter {
@@ -942,7 +945,7 @@ ul {
   margin-bottom: 0;
 }
 
-.checkbox-no-checked::before {
+.checkbox-name::before {
   content: "";
   position: absolute;
   width: 23px;
@@ -952,7 +955,7 @@ ul {
   background-repeat: no-repeat;
 }
 
-.checkbox-checked::before {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   width: 23px;
@@ -1029,7 +1032,6 @@ ul {
 
 .price {
   text-transform: uppercase;
-  font-weight: 400;
   color: var(--basic-white);
   display: flex;
   width: 83px;
@@ -1037,10 +1039,9 @@ ul {
   padding: 5px 10px;
   align-items: center;
   box-sizing: border-box;
-}
-
-.price-text {
-  margin-right: 3px;
+  /*justify-content: space-between;*/
+  /*?????? Нужен совет))
+  Если оставить это свойство, а не отспуп у интупа слева, то растояние получается больше чем на макете.*/
 }
 
 .max-price {
@@ -1057,6 +1058,7 @@ ul {
   outline: none;
   border: none;
   color: var(--basic-white);
+  margin-left: 3px;
 }
 
 .price-number::placeholder {

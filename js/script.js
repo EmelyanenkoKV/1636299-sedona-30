@@ -11,11 +11,11 @@ buttonBig.onclick = function () {
   searchForm.classList.toggle("modal-show");
 }
 
-document.addEventListener('keydown', function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (searchForm.classList.contains("modal-show")) {
+    if (searchForm.classList.contains("modal-close")) {
       evt.preventDefault();
-      searchForm.classList.remove("modal-show");
+      searchForm.classList.remove("modal-close");
     }
   }
   });
