@@ -59,7 +59,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
 .page-body {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
