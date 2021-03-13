@@ -162,12 +162,12 @@ ul {
 }
 
 .site-item:nth-child(2) {
-
+  margin-left: 52px;
   text-align: left;
 }
 
 .site-item:nth-child(3) {
-
+  margin-right: 50px;
   grid-column-start: 4;
   text-align: right;
 }
@@ -574,7 +574,6 @@ ul {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
 }
 
 .modal-close {

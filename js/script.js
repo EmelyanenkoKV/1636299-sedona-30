@@ -2,6 +2,8 @@ const buttonBig = document.querySelector(".button-big");
 const searchForm = document.querySelector(".search-form");
 const dateIn = searchForm.querySelector("[name = date-in]");
 
+searchForm.classList.add("modal-close");
+
 buttonBig.addEventListener("click", function (evt) {
   evt.preventDefault();
   searchForm.classList.toggle("modal-show");
