@@ -157,25 +157,23 @@ ul {
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
 }
 
-.site-item {
-  text-align: center;
-}
-
 .site-item:first-child {
   text-align: left;
 }
 
-.site-item:last-child {
-  text-align: right;
-}
-
 .site-item:nth-child(2) {
-  padding-left: 25px;
+
+  text-align: left;
 }
 
 .site-item:nth-child(3) {
-  padding-right: 10px;
+
   grid-column-start: 4;
+  text-align: right;
+}
+
+.site-item:last-child {
+  text-align: right;
 }
 
 .navigation-item {
