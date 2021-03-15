@@ -380,7 +380,6 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 .search-form {
   position: absolute;
   left: 317px;
-  display: flex;
   flex-direction: column;
   box-sizing: border-box;
   width: 568px;
@@ -388,7 +387,7 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   padding: 55px;
   background-color: var(--basic-white);
   box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
-  flex-wrap: wrap;
+  transition: 3s ease;
 }
 
 .wrapper-search {
@@ -587,10 +586,13 @@ url("../fonts/PTSans-Bold.woff") format("woff");
 
 .modal-show {
   display: block;
+  opacity: 1;
+  z-index: 2;
 }
 
 .modal-close {
-  display: none;
+  opacity: 0;
+  z-index: -1;
 }
 
 .modal-error {
@@ -602,13 +604,13 @@ url("../fonts/PTSans-Bold.woff") format("woff");
   height: 594px;
   background-color: var(--background-map-green);
 }
-.map-hidden {
-  display: none;
-}
 .map-iframe {
   border: 1px solid var(--basic-black);
 }
-
+.map-img {
+  width: 1199px;
+  height: 594px;
+}
 /*Footer*/
 
 .main-footer {

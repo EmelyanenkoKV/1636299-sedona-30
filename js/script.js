@@ -4,13 +4,7 @@ const dateIn = searchForm.querySelector("[name = date-in]");
 const dateOut = searchForm.querySelector("[name = date-out]");
 const Adults = searchForm.querySelector("[name = adults]");
 const Kids = searchForm.querySelector("[name = kids]");
-/*const mapImg = document.querySelector(".map-img");
-const mapIframe = document.querySelector(".map-iframe");
 
-document.addEventListener("DOMContentLoaded", function () {
-  mapImg.classList.add("map-hidden");
-  mapIframe.classList.remove("map-hidden");
-});*/
 searchForm.addEventListener("submit", function(evt) {
   if (!dateIn.value || !dateOut.value || !Adults.value || !Kids.value) {
     evt.preventDefault();
