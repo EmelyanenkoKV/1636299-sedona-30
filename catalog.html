@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/icons/152.png">
@@ -12,21 +12,21 @@
 <body class="page-body inner-page">
 <header class="main-header">
   <nav class="main-navigation high-line">
-    <a class="main-header-logo" href="index.html">
-      <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
+    <a class="main-header-logo decoration-none" href="index.html">
+      <img class="img" src="img/logo.svg " width="138" height="70" alt="Логотип сайта городка Седона">
     </a>
-    <ul class="site-list-navigation">
+    <ul class="site-list-navigation style-none">
       <li class="site-item">
-        <a class="navigation-item" href="#">информация</a>
+        <a class="navigation-item decoration-none" href="#">информация</a>
       </li>
       <li class="site-item">
-        <a class="navigation-item" href="#">фото и видео</a>
+        <a class="navigation-item decoration-none" href="#">фото и видео</a>
       </li>
       <li class="site-item">
-        <a class="navigation-item" href="#">карта штата</a>
+        <a class="navigation-item decoration-none" href="#">карта штата</a>
       </li>
       <li class="site-item">
-        <a class="navigation-item active-page" href="catalog.html">гостиницы</a>
+        <a class="navigation-item active-page decoration-none" href="catalog.html">гостиницы</a>
       </li>
     </ul>
   </nav>
@@ -39,7 +39,7 @@
     <form class="filter-category" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
       <fieldset class="filter infrastructure">
         <legend class="filter-title">Инфраструктура:</legend>
-        <ul class="filter-list">
+        <ul class="filter-list style-none">
           <li class="filter-option">
             <input class="visually-hidden filter-input-checkbox " type="checkbox" name="pool"
                    id="filter-pool" checked>
@@ -56,11 +56,10 @@
             <label class="checkbox-name" for="filter-wi-fi">wi-fi</label>
           </li>
         </ul>
-
       </fieldset>
       <fieldset class="filter type-housing">
         <legend class="filter-title">Тип жилья:</legend>
-        <ul class="filter-list">
+        <ul class="filter-list style-none">
           <li class="filter-option filter-checkbox">
             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel"
                    id="filter-hotel" checked>
@@ -95,8 +94,8 @@
             <div class="scale">
               <div class="bar"></div>
             </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
           </div>
         </div>
         <div class="button-filter">
@@ -112,26 +111,26 @@
         <span class="title high-line">3</span>
       </p>
       <h3 class="thin-text sorting-subtitle">Сортировка:</h3>
-      <ul class="assortment-list thin-text">
+      <ul class="assortment-list thin-text style-none">
         <li>
-          <a class="assortment-item active-item" href="#">По цене</a></li>
+          <a class="assortment-item active-item decoration-none" href="#">По цене</a></li>
         <li>
-          <a class="assortment-item" href="#">По типу</a>
+          <a class="assortment-item decoration-none" href="#">По типу</a>
         </li>
         <li>
-          <a class="assortment-item" href="#">По рейтингу</a>
+          <a class="assortment-item decoration-none" href="#">По рейтингу</a>
         </li>
       </ul>
-      <ul class="sorting-controls">
+      <ul class="sorting-controls style-none">
         <li>
-          <a class="arrow ascending" href="#">
+          <a class="arrow ascending decoration-none" href="#" aria-label="По возрастанию">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
             </svg>
           </a>
         </li>
         <li>
-          <a class="arrow descending down-active" href="#">
+          <a class="arrow descending down-active decoration-none" href="#" aria-label="По убыванию">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
             </svg>
@@ -139,25 +138,25 @@
         </li>
       </ul>
     </div>
-    <ul class="hotels-list">
+    <ul class="hotels-list style-none">
       <li class="hotels-item">
-        <img class="hotels-image img-Amara-Resort-and-Spa" src="img/amara_resort_and_spa.jpg" width="135" height="90"
+        <img class="hotels-image img-Amara-Resort-and-Spa img" src="img/amara_resort_and_spa.jpg" width="135" height="90"
              alt="Фото гостиницы Amara Resort and Spa">
         <div class="hotels-info">
           <h3 class="title high-line hotels">
-            <a class="hotels" href="#" target="_blank">Amara Resort & Spa</a>
+            <a class="hotels decoration-none" href="#" target="_blank">Amara Resort & Spa</a>
           </h3>
           <div class="type-price">
             <p class="gray-text thin-text type-price-text">Гостиница</p>
             <p class="gray-text thin-text type-price-text">от 4000р.</p>
           </div>
           <div class="result-buttons">
-            <a class="button button-blue button-mini" href="#">Подробнее</a>
-            <a class="button button-brown button-mini" href="#">Забронировать</a>
+            <a class="button button-blue button-mini decoration-none" href="#">Подробнее</a>
+            <a class="button button-brown button-mini decoration-none" href="#">Забронировать</a>
           </div>
         </div>
         <div class="rating-block">
-          <ul class="stars-list">
+          <ul class="stars-list style-none" aria-label="Четырехзвездочная гостиница">
             <li class="star">
               <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -191,23 +190,23 @@
         </div>
       </li>
       <li class="hotels-item">
-        <img class="hotels-image img-Desert-Quail-Inn" src="img/desert_quail_inn.jpg" width="135" height="90"
+        <img class="hotels-image img-Desert-Quail-Inn img" src="img/desert_quail_inn.jpg" width="135" height="90"
              alt="Фото мотеля Desert Quail Inn">
         <div class="hotels-info">
           <h3 class="title high-line hotels">
-            <a class="hotels" href="#" target="_blank">Desert Quail Inn</a>
+            <a class="hotels decoration-none" href="#" target="_blank">Desert Quail Inn</a>
           </h3>
           <div class="type-price">
             <p class="gray-text thin-text type-price-text">Мотель</p>
             <p class="gray-text thin-text type-price-text">от 3000р.</p>
           </div>
           <div class="result-buttons">
-            <a class="button button-blue button-mini" href="#">Подробнее</a>
-            <a class="button button-brown button-mini" href="#">Забронировать</a>
+            <a class="button button-blue button-mini decoration-none" href="#">Подробнее</a>
+            <a class="button button-brown button-mini decoration-none" href="#">Забронировать</a>
           </div>
         </div>
         <div class="rating-block">
-          <ul class="stars-list">
+          <ul class="stars-list style-none" aria-label="Трехзвездочный мотель">
             <li class="star">
               <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -234,23 +233,23 @@
         </div>
       </li>
       <li class="hotels-item">
-        <img class="hotels-image img-Villas-at-Poco-Diablo" src="img/villas_at_poco_diablo.jpg" width="135" height="90"
+        <img class="hotels-image img-Villas-at-Poco-Diablo img" src="img/villas_at_poco_diablo.jpg" width="135" height="90"
              alt="Фото апартаментов Villas at Poco Diablo">
         <div class="hotels-info">
           <h3 class="title high-line hotels">
-            <a class="hotels" href="#" target="_blank">Villas at Poco Diablo</a>
+            <a class="hotels decoration-none" href="#" target="_blank">Villas at Poco Diablo</a>
           </h3>
           <div class="type-price">
             <p class="gray-text thin-text type-price-text">Апартаменты</p>
             <p class="gray-text thin-text type-price-text">от 2000р.</p>
           </div>
           <div class="result-buttons">
-            <a class="button button-blue button-mini" href="#">Подробнее</a>
-            <a class="button button-brown button-mini" href="#">Забронировать</a>
+            <a class="button button-blue button-mini decoration-none" href="#">Подробнее</a>
+            <a class="button button-brown button-mini decoration-none" href="#">Забронировать</a>
           </div>
         </div>
         <div class="rating-block">
-          <ul class="stars-list">
+          <ul class="stars-list style-none" aria-label="Двухзвездочные апартаменты">
             <li class="star">
               <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -274,12 +273,12 @@
 </main>
 <footer class="main-footer">
   <address class="footer-address high-line">
-    <a class="footer-contacts hashtag" href="#" target="_blank">#visitSEDONA</a>
-    <a class="footer-contacts phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+    <a class="footer-contacts hashtag decoration-none" href="#" target="_blank">#visitSEDONA</a>
+    <a class="footer-contacts phone decoration-none" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
   </address>
-  <ul class="social-list">
+  <ul class="social-list style-none">
     <li>
-      <a class="social-button" href="#" target="_blank">
+      <a class="social-button decoration-none" href="#" target="_blank">
         <span class="visually-hidden">twitter</span>
         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -289,7 +288,7 @@
       </a>
     </li>
     <li>
-      <a class="social-button" href="#" target="_blank">
+      <a class="social-button decoration-none" href="#" target="_blank">
         <span class="visually-hidden">facebook</span>
         <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
@@ -297,7 +296,7 @@
       </a>
     </li>
     <li>
-      <a class="social-button" href="#" target="_blank">
+      <a class="social-button decoration-none" href="#" target="_blank">
         <span class="visually-hidden">YouTube</span>
         <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -309,7 +308,7 @@
   </ul>
   <div class="footer-copyright">
     <p class="text-copyright">website by</p>
-    <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+    <a class="copyright decoration-none" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
       <span class="visually-hidden">html academy</span>
       <svg width="115" height="41" viewBox="0 0 115 41" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
